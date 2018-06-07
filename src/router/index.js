@@ -5,7 +5,9 @@ import Home from '@/components/Home'
 import Contact from '@/components/Contact'
 import Comments from '@/components/Comments'
 import Chapters from '@/components/Chapters'
-import ThemeOne from '@/components/ChapterOne/ThemeOne'
+import ChapterOneThemeOne from '@/components/ChapterOne/ThemeOne'
+import ChapterOneThemeTwo from '@/components/ChapterOne/ThemeTwo'
+import ChapterOneThemeThree from '@/components/ChapterOne/ThemeThree'
 
 Vue.use(Router)
 
@@ -33,8 +35,18 @@ export default new Router({
     },
     {
       path: '/capitulo/1/tema/1',
-      name: 'ThemeOne',
-      component: ThemeOne
+      name: 'ChapterOneThemeOne',
+      component: ChapterOneThemeOne
+    },
+    {
+      path: '/capitulo/1/tema/2',
+      name: 'ChapterOneThemeTwo',
+      component: ChapterOneThemeTwo
+    },
+    {
+      path: '/capitulo/1/tema/3',
+      name: 'ChapterOneThemeThree',
+      component: ChapterOneThemeThree
     }
   ],
   mode: 'history',
