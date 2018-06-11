@@ -20,7 +20,7 @@
             </v-card-text>
           </v-card>
           </template>
-          <template v-else-if="statusCode == 400">
+          <template v-else-if="statusCode == 500">
             <v-card color="white lighten-5">
             <v-card-text class="display-1 black--text text-xs-center">Error {{ statusCode }}</v-card-text>
             <v-divider></v-divider>
@@ -38,7 +38,7 @@
 <script>
 import { mapState } from 'vuex'
 export default {
-  name: 'ThemeOne',
+  name: 'ChapterOneThemeOne',
   data: () => ({
     themeOne: 'ChapterOne'
   }),

@@ -8,6 +8,7 @@ import Chapters from '@/components/Chapters'
 import ChapterOneThemeOne from '@/components/ChapterOne/ThemeOne'
 import ChapterOneThemeTwo from '@/components/ChapterOne/ThemeTwo'
 import ChapterOneThemeThree from '@/components/ChapterOne/ThemeThree'
+import ChapterOneThemeFour from '@/components/ChapterOne/ThemeFour'
 
 Vue.use(Router)
 
@@ -47,6 +48,11 @@ export default new Router({
       path: '/capitulo/1/tema/3',
       name: 'ChapterOneThemeThree',
       component: ChapterOneThemeThree
+    },
+    {
+      path: '/capitulo/1/tema/4',
+      name: 'ChapterOneThemeFour',
+      component: ChapterOneThemeFour
     }
   ],
   mode: 'history',
