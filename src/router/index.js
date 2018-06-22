@@ -13,6 +13,9 @@ import ChapterOneThemeFour from '@/components/ChapterOne/ThemeFour'
 // Chapter Two
 import ChapterTwoThemeOne from '@/components/ChapterTwo/ThemeOne'
 import ChapterTwoThemeTwo from '@/components/ChapterTwo/ThemeTwo'
+import ChapterTwoThemeThree from '@/components/ChapterTwo/ThemeThree'
+import ChapterTwoThemeFour from '@/components/ChapterTwo/ThemeFour'
+import ChapterTwoThemeFive from '@/components/ChapterTwo/ThemeFive'
 
 Vue.use(Router)
 
@@ -67,6 +70,21 @@ export default new Router({
       path: '/capitulo/2/tema/2',
       name: 'ChapterTwoThemeTwo',
       component: ChapterTwoThemeTwo
+    },
+    {
+      path: '/capitulo/2/tema/3',
+      name: 'ChapterTwoThemeThree',
+      component: ChapterTwoThemeThree
+    },
+    {
+      path: '/capitulo/2/tema/4',
+      name: 'ChapterTwoThemeFour',
+      component: ChapterTwoThemeFour
+    },
+    {
+      path: '/capitulo/2/tema/5',
+      name: 'ChapterTwoThemeFive',
+      component: ChapterTwoThemeFive
     }
   ],
   mode: 'history',

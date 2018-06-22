@@ -141,9 +141,9 @@ export default {
         children: [
           { icon: 'school', text: 'Acentuación', link: '/capitulo/2/tema/1' },
           { icon: 'school', text: 'Reglas generales de acentuación', link: '/capitulo/2/tema/2' },
-          { icon: 'school', text: 'Diptongos' },
-          { icon: 'school', text: 'Triptongos' },
-          { icon: 'school', text: 'Tilde diacrítica' }
+          { icon: 'school', text: 'Diptongos', link: '/capitulo/2/tema/3' },
+          { icon: 'school', text: 'Triptongos', link: '/capitulo/2/tema/4' },
+          { icon: 'school', text: 'Tilde diacrítica', link: '/capitulo/2/tema/5' }
         ]
       },
       {
