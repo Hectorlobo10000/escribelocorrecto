@@ -23,9 +23,6 @@
               <p>
                 <vue-markdown :source="data.exerciseOne.statement.split('\\n').join('\n').split('\\t').join('\t')"></vue-markdown>
               </p>
-              <p>
-                <vue-markdown :source="data.exerciseOne.storyTitle.split('\\n').join('\n').split('\\t').join('\t')"></vue-markdown>
-              </p>
               <v-layout row wrap>
                 <v-flex xs12 sm12 md12 v-for="(item, key) in data.exerciseOne.paragraphs" :key="key">
                   <p>
@@ -37,11 +34,19 @@
               <p>
                 <vue-markdown :source="data.exerciseTwo.statement.split('\\n').join('\n').split('\\t').join('\t')"></vue-markdown>
               </p>
-              <p>
-                <vue-markdown :source="data.exerciseTwo.storyTitle.split('\\n').join('\n').split('\\t').join('\t')"></vue-markdown>
-              </p>
               <v-layout row wrap>
                 <v-flex xs12 sm12 md12 v-for="(item, key) in data.exerciseTwo.paragraphs" :key="key">
+                  <p>
+                    <vue-markdown :source="item.text.split('\\n').join('\n').split('\\t').join('\t')"></vue-markdown>
+                  </p>
+                </v-flex>
+              </v-layout>
+              <h3>{{ data.exerciseThree.title }}</h3>
+              <p>
+                <vue-markdown :source="data.exerciseThree.statement.split('\\n').join('\n').split('\\t').join('\t')"></vue-markdown>
+              </p>
+              <v-layout row wrap>
+                <v-flex xs12 sm12 md12 v-for="(item, key) in data.exerciseThree.paragraphs" :key="key">
                   <p>
                     <vue-markdown :source="item.text.split('\\n').join('\n').split('\\t').join('\t')"></vue-markdown>
                   </p>
@@ -68,13 +73,13 @@
 <script>
 import { mapState } from 'vuex'
 export default {
-  name: 'ChapterThreeThemeOne',
+  name: 'ChapterThreeThemeTwo',
   data: () => ({
-    themeOne: 'Theme One'
+    themeTwo: 'Theme Two'
   }),
   computed: mapState(['loading', 'statusCode', 'data']),
   created () {
-    this.$store.dispatch('getTheme', { chapter: 'Three', theme: 'One' })
+    this.$store.dispatch('getTheme', { chapter: 'Three', theme: 'Two' })
   }
 }
 </script>

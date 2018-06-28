@@ -16,6 +16,16 @@ import ChapterTwoThemeTwo from '@/components/ChapterTwo/ThemeTwo'
 import ChapterTwoThemeThree from '@/components/ChapterTwo/ThemeThree'
 import ChapterTwoThemeFour from '@/components/ChapterTwo/ThemeFour'
 import ChapterTwoThemeFive from '@/components/ChapterTwo/ThemeFive'
+// Chapter Three
+import ChapterThreeThemeOne from '@/components/ChapterThree/ThemeOne'
+import ChapterThreeThemeTwo from '@/components/ChapterThree/ThemeTwo'
+import ChapterThreeThemeThree from '@/components/ChapterThree/ThemeThree'
+import ChapterThreeThemeFour from '@/components/ChapterThree/ThemeFour'
+import ChapterThreeThemeFive from '@/components/ChapterThree/ThemeFive'
+// Chapter Four
+import ChapterFourThemeOne from '@/components/ChapterFour/ThemeOne'
+import ChapterFourThemeTwo from '@/components/ChapterFour/ThemeTwo'
+import ChapterFourThemeThree from '@/components/ChapterFour/ThemeThree'
 
 Vue.use(Router)
 
@@ -85,6 +95,46 @@ export default new Router({
       path: '/capitulo/2/tema/5',
       name: 'ChapterTwoThemeFive',
       component: ChapterTwoThemeFive
+    },
+    {
+      path: '/capitulo/3/tema/1',
+      name: 'ChapterThreeThemeOne',
+      component: ChapterThreeThemeOne
+    },
+    {
+      path: '/capitulo/3/tema/2',
+      name: 'ChapterThreeThemeTwo',
+      component: ChapterThreeThemeTwo
+    },
+    {
+      path: '/capitulo/3/tema/3',
+      name: 'ChapterThreeThemeThree',
+      component: ChapterThreeThemeThree
+    },
+    {
+      path: '/capitulo/3/tema/4',
+      name: 'ChapterThreeThemeFour',
+      component: ChapterThreeThemeFour
+    },
+    {
+      path: '/capitulo/3/tema/5',
+      name: 'ChapterThreeThemeFive',
+      component: ChapterThreeThemeFive
+    },
+    {
+      path: '/capitulo/4/tema/1',
+      name: 'ChapterFourThemeOne',
+      component: ChapterFourThemeOne
+    },
+    {
+      path: '/capitulo/4/tema/2',
+      name: 'ChapterFourThemeTwo',
+      component: ChapterFourThemeTwo
+    },
+    {
+      path: '/capitulo/4/tema/3',
+      name: 'ChapterFourThemeThree',
+      component: ChapterFourThemeThree
     }
   ],
   mode: 'history',

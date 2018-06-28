@@ -152,11 +152,11 @@ export default {
         text: 'Capítulo 3',
         model: false,
         children: [
-          { icon: 'school', text: 'Signos que indican pausa' },
-          { icon: 'school', text: 'Uso de los signos auxiliares' },
-          { icon: 'school', text: 'Signos que indican entonación' },
-          { icon: 'school', text: 'El subrayado' },
-          { icon: 'school', text: 'División de palabras' }
+          { icon: 'school', text: 'Signos que indican pausa', link: '/capitulo/3/tema/1' },
+          { icon: 'school', text: 'Uso de los signos auxiliares', link: '/capitulo/3/tema/2' },
+          { icon: 'school', text: 'Signos que indican entonación', link: '/capitulo/3/tema/3' },
+          { icon: 'school', text: 'El subrayado', link: '/capitulo/3/tema/4' },
+          { icon: 'school', text: 'División de palabras', link: '/capitulo/3/tema/5' }
         ]
       },
       {
@@ -165,9 +165,9 @@ export default {
         text: 'Capítulo 4',
         model: false,
         children: [
-          { icon: 'school', text: 'Las Abreviaturas' },
-          { icon: 'school', text: 'Siglas y acrónimos' },
-          { icon: 'school', text: 'Glosario de abreviaturas, siglas y acrónimos más usados' },
+          { icon: 'school', text: 'Las Abreviaturas', link: '/capitulo/4/tema/1' },
+          { icon: 'school', text: 'Siglas y acrónimos', link: '/capitulo/4/tema/2' },
+          { icon: 'school', text: 'Glosario de abreviaturas, siglas y acrónimos más usados', link: '/capitulo/4/tema/3' },
           { icon: 'school', text: 'Glosario de símbolos' }
         ]
       },

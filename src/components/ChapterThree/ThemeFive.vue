@@ -23,28 +23,24 @@
               <p>
                 <vue-markdown :source="data.exerciseOne.statement.split('\\n').join('\n').split('\\t').join('\t')"></vue-markdown>
               </p>
-              <p>
-                <vue-markdown :source="data.exerciseOne.storyTitle.split('\\n').join('\n').split('\\t').join('\t')"></vue-markdown>
-              </p>
               <v-layout row wrap>
-                <v-flex xs12 sm12 md12 v-for="(item, key) in data.exerciseOne.paragraphs" :key="key">
-                  <p>
-                    <vue-markdown :source="item.text.split('\\n').join('\n').split('\\t').join('\t')"></vue-markdown>
-                  </p>
-                </v-flex>
-              </v-layout>
-              <h3>{{ data.exerciseTwo.title }}</h3>
-              <p>
-                <vue-markdown :source="data.exerciseTwo.statement.split('\\n').join('\n').split('\\t').join('\t')"></vue-markdown>
-              </p>
-              <p>
-                <vue-markdown :source="data.exerciseTwo.storyTitle.split('\\n').join('\n').split('\\t').join('\t')"></vue-markdown>
-              </p>
-              <v-layout row wrap>
-                <v-flex xs12 sm12 md12 v-for="(item, key) in data.exerciseTwo.paragraphs" :key="key">
-                  <p>
-                    <vue-markdown :source="item.text.split('\\n').join('\n').split('\\t').join('\t')"></vue-markdown>
-                  </p>
+                <v-flex xs12 sm12 md12 class="pr-1">
+                  <v-data-table
+                    :headers="data.exerciseOne.table.headers"
+                    :items="data.exerciseOne.table.desserts"
+                    hide-headers
+                    class="elevation-1">
+                    <template slot="items" slot-scope="props">
+                        <td>
+                          {{ props.item.name }}
+                        </td>
+                        <td>
+                          <v-flex xs12 sm12 md12 class="pl-1">
+                              <v-text-field name="input-3" :label="props.item.exercise" disabled></v-text-field>
+                            </v-flex>
+                        </td>
+                    </template>
+                  </v-data-table>
                 </v-flex>
               </v-layout>
             </v-container>
@@ -68,13 +64,13 @@
 <script>
 import { mapState } from 'vuex'
 export default {
-  name: 'ChapterThreeThemeOne',
+  name: 'ChapterThreeThemeFive',
   data: () => ({
-    themeOne: 'Theme One'
+    themeFive: 'Theme Five'
   }),
   computed: mapState(['loading', 'statusCode', 'data']),
   created () {
-    this.$store.dispatch('getTheme', { chapter: 'Three', theme: 'One' })
+    this.$store.dispatch('getTheme', { chapter: 'Three', theme: 'Five' })
   }
 }
 </script>
