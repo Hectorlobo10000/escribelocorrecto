@@ -28,7 +28,7 @@ export const store = new Vuex.Store({
           context.commit('loading', true)
           context.commit('statusCode', response.status)
           context.commit('data', response.data)
-          console.log(response.data)
+          // console.log(response.data)
           context.commit('loading', false)
         })
     }

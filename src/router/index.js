@@ -26,6 +26,15 @@ import ChapterThreeThemeFive from '@/components/ChapterThree/ThemeFive'
 import ChapterFourThemeOne from '@/components/ChapterFour/ThemeOne'
 import ChapterFourThemeTwo from '@/components/ChapterFour/ThemeTwo'
 import ChapterFourThemeThree from '@/components/ChapterFour/ThemeThree'
+import ChapterFourThemeFour from '@/components/ChapterFour/ThemeFour'
+// Chapter Five
+import ChapterFiveThemeOne from '@/components/ChapterFive/ThemeOne'
+import ChapterFiveThemeTwo from '@/components/ChapterFive/ThemeTwo'
+// Chapter Six
+import ChapterSixThemeOne from '@/components/ChapterSix/ThemeOne'
+import ChapterSixThemeTwo from '@/components/ChapterSix/ThemeTwo'
+import ChapterSixThemeThree from '@/components/ChapterSix/ThemeThree'
+import ChapterSixThemeFour from '@/components/ChapterSix/ThemeFour'
 
 Vue.use(Router)
 
@@ -135,6 +144,41 @@ export default new Router({
       path: '/capitulo/4/tema/3',
       name: 'ChapterFourThemeThree',
       component: ChapterFourThemeThree
+    },
+    {
+      path: '/capitulo/4/tema/4',
+      name: 'ChapterFourThemeFour',
+      component: ChapterFourThemeFour
+    },
+    {
+      path: '/capitulo/5/tema/1',
+      name: 'ChapterFiveThemeOne',
+      component: ChapterFiveThemeOne
+    },
+    {
+      path: '/capitulo/5/tema/2',
+      name: 'ChapterFiveThemeTwo',
+      component: ChapterFiveThemeTwo
+    },
+    {
+      path: '/capitulo/6/tema/1',
+      name: 'ChapterSixThemeOne',
+      component: ChapterSixThemeOne
+    },
+    {
+      path: '/capitulo/6/tema/2',
+      name: 'ChapterSixThemeTwo',
+      component: ChapterSixThemeTwo
+    },
+    {
+      path: '/capitulo/6/tema/3',
+      name: 'ChapterSixThemeThree',
+      component: ChapterSixThemeThree
+    },
+    {
+      path: '/capitulo/6/tema/4',
+      name: 'ChapterSixThemeFour',
+      component: ChapterSixThemeFour
     }
   ],
   mode: 'history',

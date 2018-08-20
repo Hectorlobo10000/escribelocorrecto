@@ -1,0 +1,79 @@
+<template>
+  <v-container>
+    <template v-if="loading">
+      <v-layout justify-center align-center>
+        <v-progress-circular indeterminate :size="70" :width="7" color="primary"></v-progress-circular>
+      </v-layout>
+    </template>
+    <template v-else>
+      <v-layout row>
+        <v-flex xs12 sm12 md12 lg12 xl12 offset-xs0>
+          <template v-if="statusCode == 200">
+            <v-card color="white lighten-5">
+              <v-card-text class="display-1 black--text text-xs-center">{{ data.theme }}</v-card-text>
+              <v-divider></v-divider>
+              <v-card-text>
+                <h2 class="headline mb-3"> {{ data.subTheme }}</h2>
+                <!-- <p v-for="(item, key) in data.paragraphs" :key="key">
+                  <vue-markdown :source="item.text.split('\\n').join('\n').split('\\t').join('\t').split('\\#').join('#')"></vue-markdown>
+                </p> -->
+              </v-card-text>
+              <v-container fluid grid-list-{xs through xl}>
+                <v-layout row wrap>
+                  <v-flex xs12 sm12 md12>
+                    <v-data-table
+                        :headers="data.table.headers"
+                        :items="data.table.desserts"
+                        hide-headers
+                        hide-actions
+                        class="elevation-1">
+                        <template slot="items" slot-scope="props">
+                          <td>
+                            <p class="text-xs-center">{{ props.item.word }}</p>
+                          </td>
+                          <td>
+                            <p class="text-xs-center">{{ props.item.meaning }}</p>
+                          </td>
+                        </template>
+                    </v-data-table>
+                  </v-flex>
+                </v-layout>
+              </v-container>
+            </v-card>
+          </template>
+          <template v-else-if="statusCode == 500">
+            <v-card color="white lighten-5">
+            <v-card-text class="display-1 black--text text-xs-center">Error {{ statusCode }}</v-card-text>
+            <v-divider></v-divider>
+            <v-card-text>
+              <h2 class="headline mb-3"> {{ data.message }}</h2>
+            </v-card-text>
+          </v-card>
+          </template>
+        </v-flex>
+      </v-layout>
+    </template>
+  </v-container>
+</template>
+
+<script>
+import { mapState } from 'vuex'
+export default {
+  name: 'ChapterFourThemeFour',
+  data: () => ({
+    themeFour: 'Theme Four',
+    headers: [
+      {
+        text: 'word',
+        sortable: false,
+        align: 'center',
+        value: 'word'
+      }
+    ]
+  }),
+  computed: mapState(['loading', 'statusCode', 'data']),
+  created () {
+    this.$store.dispatch('getTheme', { chapter: 'Four', theme: 'Four' })
+  }
+}
+</script>

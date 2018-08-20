@@ -168,7 +168,7 @@ export default {
           { icon: 'school', text: 'Las Abreviaturas', link: '/capitulo/4/tema/1' },
           { icon: 'school', text: 'Siglas y acrónimos', link: '/capitulo/4/tema/2' },
           { icon: 'school', text: 'Glosario de abreviaturas, siglas y acrónimos más usados', link: '/capitulo/4/tema/3' },
-          { icon: 'school', text: 'Glosario de símbolos' }
+          { icon: 'school', text: 'Glosario de símbolos', link: '/capitulo/4/tema/4' }
         ]
       },
       {
@@ -177,8 +177,8 @@ export default {
         text: 'Capítulo 5',
         model: false,
         children: [
-          { icon: 'school', text: 'Uso de las letras mayúsculas' },
-          { icon: 'school', text: 'Uso de las letras minúsculas' }
+          { icon: 'school', text: 'Uso de las letras mayúsculas', link: '/capitulo/5/tema/1' },
+          { icon: 'school', text: 'Uso de las letras minúsculas', link: '/capitulo/5/tema/2' }
         ]
       },
       {
@@ -187,10 +187,10 @@ export default {
         text: 'Capítulo 6',
         model: false,
         children: [
-          { icon: 'school', text: 'Uso de la letra B,V' },
-          { icon: 'school', text: 'Uso de la letra C, S, Z' },
-          { icon: 'school', text: 'Uso de la letra K, Q' },
-          { icon: 'school', text: 'Uso de la letra G, J' },
+          { icon: 'school', text: 'Uso de la letra B,V', link: '/capitulo/6/tema/1' },
+          { icon: 'school', text: 'Uso de la letra C, S, Z', link: '/capitulo/6/tema/2' },
+          { icon: 'school', text: 'Uso de la letra K, Q', link: '/capitulo/6/tema/3' },
+          { icon: 'school', text: 'Uso de la letra G, J', link: '/capitulo/6/tema/4' },
           { icon: 'school', text: 'Uso de la letra H' },
           { icon: 'school', text: 'Diferencias y uso de ha y a' },
           { icon: 'school', text: 'Uso del dígrafo Ll' },
