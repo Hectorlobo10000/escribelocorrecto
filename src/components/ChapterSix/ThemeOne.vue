@@ -14,16 +14,19 @@
             <v-divider></v-divider>
             <v-card-text>
               <h2 class="headline mb-3"> {{ data.subTheme }}</h2>
-              <p v-for="(item, key) in data.paragraphs" :key="key">
+              <!-- <p v-for="(item, key) in data.paragraphs" :key="key">
                 <vue-markdown :source="item.text.split('\\n').join('\n').split('\\t').join('\t')"></vue-markdown>
-              </p>
+              </p> -->
             </v-card-text>
             <v-container fluid grid-list-{xs through xl}>
                 <v-layout row wrap v-for="(item, key) in data.tables" :key="key">
                   <v-flex xs12 sm12 md12>
+                    <p>
+                      <vue-markdown :source="item.statement.split('\\n').join('\n').split('\\t').join('\t')"></vue-markdown>
+                    </p>
                     <v-data-table
-                        :headers="item.letterB.headers"
-                        :items="item.letterB.desserts"
+                        :headers="headers"
+                        :items="item.letter.desserts"
                         hide-actions
                         class="elevation-1">
                         <template slot="items" slot-scope="props">
@@ -38,6 +41,8 @@
                           </td>
                         </template>
                     </v-data-table>
+                    <br>
+                    <br>
                   </v-flex>
                 </v-layout>
             </v-container>
@@ -63,7 +68,27 @@ import { mapState } from 'vuex'
 export default {
   name: 'ChapterSixThemeOne',
   data: () => ({
-    themeOne: 'Theme One'
+    themeOne: 'Theme One',
+    headers: [
+      {
+        text: 'Se escribe con B',
+        align: 'center',
+        value: 'letter',
+        sortable: false
+      },
+      {
+        text: 'Ejemplos',
+        align: 'center',
+        value: 'example',
+        sortable: false
+      },
+      {
+        text: 'Excepciones',
+        align: 'center',
+        value: 'exception',
+        sortable: false
+      }
+    ]
   }),
   computed: mapState(['loading', 'statusCode', 'data']),
   created () {
