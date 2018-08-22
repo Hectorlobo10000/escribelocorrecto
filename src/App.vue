@@ -207,8 +207,8 @@ export default {
         text: 'Capítulo 7',
         model: false,
         children: [
-          { icon: 'school', text: 'El sustantivo' },
-          { icon: 'school', text: 'El adjetivo' },
+          { icon: 'school', text: 'El sustantivo', link: '/capitulo/7/tema/1' },
+          { icon: 'school', text: 'El adjetivo', link: '/capitulo/7/tema/2' },
           { icon: 'school', text: 'El género' },
           { icon: 'school', text: 'El número' },
           { icon: 'school', text: 'El artículo' },

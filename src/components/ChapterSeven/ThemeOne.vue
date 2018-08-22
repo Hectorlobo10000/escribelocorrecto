@@ -38,13 +38,13 @@
 <script>
 import { mapState } from 'vuex'
 export default {
-  name: 'ChapterTwoThemeOne',
+  name: 'ChapterSevenThemeOne',
   data: () => ({
     themeOne: 'Theme One'
   }),
   computed: mapState(['loading', 'statusCode', 'data']),
   created () {
-    this.$store.dispatch('getTheme', { chapter: 'Two', theme: 'One' })
+    this.$store.dispatch('getTheme', { chapter: 'Seven', theme: 'One' })
   }
 }
 </script>

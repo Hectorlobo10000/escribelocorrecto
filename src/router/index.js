@@ -43,6 +43,9 @@ import ChapterSixThemeNine from '@/components/ChapterSix/ThemeNine'
 import ChapterSixThemeTen from '@/components/ChapterSix/ThemeTen'
 import ChapterSixThemeEleven from '@/components/ChapterSix/ThemeEleven'
 import ChapterSixThemeTwelve from '@/components/ChapterSix/ThemeTwelve'
+// Chapter Seven
+import ChapterSevenThemeOne from '@/components/ChapterSeven/ThemeOne'
+import ChapterSevenThemeTwo from '@/components/ChapterSeven/ThemeTwo'
 
 Vue.use(Router)
 
@@ -227,6 +230,16 @@ export default new Router({
       path: '/capitulo/6/tema/12',
       name: 'ChapterSixThemeTwelve',
       component: ChapterSixThemeTwelve
+    },
+    {
+      path: '/capitulo/7/tema/1',
+      name: 'ChapterSevenThemeOne',
+      component: ChapterSevenThemeOne
+    },
+    {
+      path: '/capitulo/7/tema/2',
+      name: 'ChapterSevenThemeTwo',
+      component: ChapterSevenThemeTwo
     }
   ],
   mode: 'history',

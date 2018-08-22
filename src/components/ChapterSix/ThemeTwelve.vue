@@ -66,9 +66,9 @@
 <script>
 import { mapState } from 'vuex'
 export default {
-  name: 'ChapterSixThemeOne',
+  name: 'ChapterSixThemeTwelve',
   data: () => ({
-    themeOne: 'Theme One'
+    themeOne: 'Theme Twelve'
   }),
   computed: mapState(['loading', 'statusCode', 'data']),
   created () {
