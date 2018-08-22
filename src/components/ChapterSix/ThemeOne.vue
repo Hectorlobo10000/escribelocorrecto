@@ -25,7 +25,7 @@
                       <vue-markdown :source="item.statement.split('\\n').join('\n').split('\\t').join('\t')"></vue-markdown>
                     </p>
                     <v-data-table
-                        :headers="headers"
+                        :headers="item.letter.headers"
                         :items="item.letter.desserts"
                         hide-actions
                         class="elevation-1">
@@ -68,27 +68,7 @@ import { mapState } from 'vuex'
 export default {
   name: 'ChapterSixThemeOne',
   data: () => ({
-    themeOne: 'Theme One',
-    headers: [
-      {
-        text: 'Se escribe con B',
-        align: 'center',
-        value: 'letter',
-        sortable: false
-      },
-      {
-        text: 'Ejemplos',
-        align: 'center',
-        value: 'example',
-        sortable: false
-      },
-      {
-        text: 'Excepciones',
-        align: 'center',
-        value: 'exception',
-        sortable: false
-      }
-    ]
+    themeOne: 'Theme One'
   }),
   computed: mapState(['loading', 'statusCode', 'data']),
   created () {

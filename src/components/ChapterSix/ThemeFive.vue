@@ -72,7 +72,7 @@ export default {
   }),
   computed: mapState(['loading', 'statusCode', 'data']),
   created () {
-    this.$store.dispatch('getTheme', { chapter: 'Six', theme: 'Four' })
+    this.$store.dispatch('getTheme', { chapter: 'Six', theme: 'Five' })
   }
 }
 </script>

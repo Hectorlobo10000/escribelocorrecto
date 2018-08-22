@@ -14,10 +14,38 @@
             <v-divider></v-divider>
             <v-card-text>
               <h2 class="headline mb-3"> {{ data.subTheme }}</h2>
-              <p v-for="(item, key) in data.paragraphs" :key="key">
+              <!-- <p v-for="(item, key) in data.paragraphs" :key="key">
                 <vue-markdown :source="item.text.split('\\n').join('\n').split('\\t').join('\t')"></vue-markdown>
-              </p>
+              </p> -->
             </v-card-text>
+            <v-container fluid grid-list-{xs through xl}>
+                <v-layout row wrap v-for="(item, key) in data.tables" :key="key">
+                  <v-flex xs12 sm12 md12>
+                    <p>
+                      <vue-markdown :source="item.statement.split('\\n').join('\n').split('\\t').join('\t')"></vue-markdown>
+                    </p>
+                    <v-data-table
+                        :headers="item.letter.headers"
+                        :items="item.letter.desserts"
+                        hide-actions
+                        class="elevation-1">
+                        <template slot="items" slot-scope="props">
+                          <td>
+                            <p class="text-xs-left">{{ props.item.letter }}</p>
+                          </td>
+                          <td>
+                            <p class="text-xs-left">{{ props.item.example }}</p>
+                          </td>
+                          <td>
+                            <p class="text-xs-left">{{ props.item.exception }}</p>
+                          </td>
+                        </template>
+                    </v-data-table>
+                    <br>
+                    <br>
+                  </v-flex>
+                </v-layout>
+            </v-container>
           </v-card>
           </template>
           <template v-else-if="statusCode == 500">

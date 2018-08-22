@@ -41,11 +41,14 @@
                           </td>
                         </template>
                     </v-data-table>
-                    <br>
-                    <br>
                   </v-flex>
                 </v-layout>
             </v-container>
+            <v-card-text>
+              <p v-for="(item, key) in data.paragraphs" :key="key">
+                <vue-markdown :source="item.text.split('\\n').join('\n').split('\\t').join('\t')"></vue-markdown>
+              </p>
+            </v-card-text>
           </v-card>
           </template>
           <template v-else-if="statusCode == 500">
@@ -72,7 +75,7 @@ export default {
   }),
   computed: mapState(['loading', 'statusCode', 'data']),
   created () {
-    this.$store.dispatch('getTheme', { chapter: 'Six', theme: 'Four' })
+    this.$store.dispatch('getTheme', { chapter: 'Six', theme: 'Eleven' })
   }
 }
 </script>

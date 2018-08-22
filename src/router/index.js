@@ -35,6 +35,14 @@ import ChapterSixThemeOne from '@/components/ChapterSix/ThemeOne'
 import ChapterSixThemeTwo from '@/components/ChapterSix/ThemeTwo'
 import ChapterSixThemeThree from '@/components/ChapterSix/ThemeThree'
 import ChapterSixThemeFour from '@/components/ChapterSix/ThemeFour'
+import ChapterSixThemeFive from '@/components/ChapterSix/ThemeFive'
+import ChapterSixThemeSix from '@/components/ChapterSix/ThemeSix'
+import ChapterSixThemeSeven from '@/components/ChapterSix/ThemeSeven'
+import ChapterSixThemeEight from '@/components/ChapterSix/ThemeEight'
+import ChapterSixThemeNine from '@/components/ChapterSix/ThemeNine'
+import ChapterSixThemeTen from '@/components/ChapterSix/ThemeTen'
+import ChapterSixThemeEleven from '@/components/ChapterSix/ThemeEleven'
+import ChapterSixThemeTwelve from '@/components/ChapterSix/ThemeTwelve'
 
 Vue.use(Router)
 
@@ -179,6 +187,46 @@ export default new Router({
       path: '/capitulo/6/tema/4',
       name: 'ChapterSixThemeFour',
       component: ChapterSixThemeFour
+    },
+    {
+      path: '/capitulo/6/tema/5',
+      name: 'ChapterSixThemeFive',
+      component: ChapterSixThemeFive
+    },
+    {
+      path: '/capitulo/6/tema/6',
+      name: 'ChapterSixThemeSix',
+      component: ChapterSixThemeSix
+    },
+    {
+      path: '/capitulo/6/tema/7',
+      name: 'ChapterSixThemeSeven',
+      component: ChapterSixThemeSeven
+    },
+    {
+      path: '/capitulo/6/tema/8',
+      name: 'ChapterSixThemeEight',
+      component: ChapterSixThemeEight
+    },
+    {
+      path: '/capitulo/6/tema/9',
+      name: 'ChapterSixThemeNine',
+      component: ChapterSixThemeNine
+    },
+    {
+      path: '/capitulo/6/tema/10',
+      name: 'ChapterSixThemeTen',
+      component: ChapterSixThemeTen
+    },
+    {
+      path: '/capitulo/6/tema/11',
+      name: 'ChapterSixThemeEleven',
+      component: ChapterSixThemeEleven
+    },
+    {
+      path: '/capitulo/6/tema/12',
+      name: 'ChapterSixThemeTwelve',
+      component: ChapterSixThemeTwelve
     }
   ],
   mode: 'history',

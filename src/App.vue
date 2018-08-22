@@ -191,14 +191,14 @@ export default {
           { icon: 'school', text: 'Uso de la letra C, S, Z', link: '/capitulo/6/tema/2' },
           { icon: 'school', text: 'Uso de la letra K, Q', link: '/capitulo/6/tema/3' },
           { icon: 'school', text: 'Uso de la letra G, J', link: '/capitulo/6/tema/4' },
-          { icon: 'school', text: 'Uso de la letra H' },
-          { icon: 'school', text: 'Diferencias y uso de ha y a' },
-          { icon: 'school', text: 'Uso del dígrafo Ll' },
-          { icon: 'school', text: 'Uso de la letra Y' },
-          { icon: 'school', text: 'Uso de la letra M, N' },
-          { icon: 'school', text: 'Uso de la letra R' },
-          { icon: 'school', text: 'Uso deL dígrafo RR' },
-          { icon: 'school', text: 'Uso de la letra X' }
+          { icon: 'school', text: 'Uso de la letra H', link: '/capitulo/6/tema/5' },
+          { icon: 'school', text: 'Diferencias y uso de ha y a', link: '/capitulo/6/tema/6' },
+          { icon: 'school', text: 'Uso del dígrafo Ll', link: '/capitulo/6/tema/7' },
+          { icon: 'school', text: 'Uso de la letra Y', link: '/capitulo/6/tema/8' },
+          { icon: 'school', text: 'Uso de la letra M, N', link: '/capitulo/6/tema/9' },
+          { icon: 'school', text: 'Uso de la letra R', link: '/capitulo/6/tema/10' },
+          { icon: 'school', text: 'Uso deL dígrafo RR', link: '/capitulo/6/tema/11' },
+          { icon: 'school', text: 'Uso de la letra X', link: '/capitulo/6/tema/12' }
         ]
       },
       {
