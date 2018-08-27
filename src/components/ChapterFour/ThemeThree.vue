@@ -521,7 +521,7 @@ import { mapState } from 'vuex'
 export default {
   name: 'ChapterFourThemeThree',
   data: () => ({
-    themeThree: 'Theme Three',
+    theme: 'Theme Three',
     headers: [
       {
         text: 'word',

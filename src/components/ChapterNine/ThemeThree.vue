@@ -10,36 +10,41 @@
         <v-flex xs12 sm12 md12 lg12 xl12 offset-xs0>
           <template v-if="statusCode == 200">
             <v-card color="white lighten-5">
-              <v-card-text class="display-1 black--text text-xs-center">{{ data.theme }}</v-card-text>
-              <v-divider></v-divider>
-              <v-card-text>
-                <h2 class="headline mb-3"> {{ data.subTheme }}</h2>
-                <!-- <p v-for="(item, key) in data.paragraphs" :key="key">
-                  <vue-markdown :source="item.text.split('\\n').join('\n').split('\\t').join('\t').split('\\#').join('#')"></vue-markdown>
-                </p> -->
-              </v-card-text>
-              <v-container fluid grid-list-{xs through xl}>
+            <v-card-text class="display-1 black--text text-xs-center">{{ data.theme }}</v-card-text>
+            <v-divider></v-divider>
+            <v-card-text>
+              <h2 class="headline mb-3"> {{ data.subTheme }}</h2>
+              <p v-for="(item, key) in data.paragraphs" :key="key">
+                <vue-markdown :source="item.text.split('\\n').join('\n').split('\\t').join('\t')"></vue-markdown>
+              </p>
+            </v-card-text>
+            <v-container fluid grid-list-{xs through xl}>
                 <v-layout row wrap>
                   <v-flex xs12 sm12 md12>
                     <v-data-table
                         :headers="data.table.headers"
                         :items="data.table.desserts"
-                        hide-headers
                         hide-actions
                         class="elevation-1">
                         <template slot="items" slot-scope="props">
                           <td>
-                            <p class="text-xs-center">{{ props.item.word }}</p>
+                            <p class="text-xs-center">{{ props.item.prefix }}</p>
+                          </td>
+                          <td>
+                            <p class="text-xs-center">{{ props.item.origin }}</p>
                           </td>
                           <td>
                             <p class="text-xs-center">{{ props.item.meaning }}</p>
+                          </td>
+                          <td>
+                            <p class="text-xs-center">{{ props.item.example }}</p>
                           </td>
                         </template>
                     </v-data-table>
                   </v-flex>
                 </v-layout>
-              </v-container>
-            </v-card>
+            </v-container>
+          </v-card>
           </template>
           <template v-else-if="statusCode == 500">
             <v-card color="white lighten-5">
@@ -59,21 +64,13 @@
 <script>
 import { mapState } from 'vuex'
 export default {
-  name: 'ChapterFourThemeFour',
+  name: 'ChapterNineThemeThree',
   data: () => ({
-    theme: 'Theme Four',
-    headers: [
-      {
-        text: 'word',
-        sortable: false,
-        align: 'center',
-        value: 'word'
-      }
-    ]
+    theme: 'Theme Three'
   }),
   computed: mapState(['loading', 'statusCode', 'data']),
   created () {
-    this.$store.dispatch('getTheme', { chapter: 'Four', theme: 'Four' })
+    this.$store.dispatch('getTheme', { chapter: 'Nine', theme: 'Three' })
   }
 }
 </script>

@@ -18,34 +18,15 @@
                 <vue-markdown :source="item.text.split('\\n').join('\n').split('\\t').join('\t')"></vue-markdown>
               </p> -->
             </v-card-text>
-            <v-container fluid grid-list-{xs through xl}>
-                <v-layout row wrap v-for="(item, key) in data.tables" :key="key">
-                  <v-flex xs12 sm12 md12>
-                    <p>
-                      <vue-markdown :source="item.statement.split('\\n').join('\n').split('\\t').join('\t')"></vue-markdown>
-                    </p>
-                    <v-data-table
-                        :headers="item.letter.headers"
-                        :items="item.letter.desserts"
-                        hide-actions
-                        class="elevation-1">
-                        <template slot="items" slot-scope="props">
-                          <td>
-                            <p class="text-xs-left">{{ props.item.letter }}</p>
-                          </td>
-                          <td>
-                            <p class="text-xs-left">{{ props.item.example }}</p>
-                          </td>
-                          <td>
-                            <p class="text-xs-left">{{ props.item.exception }}</p>
-                          </td>
-                        </template>
-                    </v-data-table>
-                    <br>
-                    <br>
+            <v-container fluid grid-list-sm>
+                <v-layout row wrap class="ml-2">
+                  <v-flex xs12 sm4 md4 lg4 xl4 v-for="(item, index) in data.words" :key="index">
+                    <v-card class="pl-2 pt-2 mr-2 white--text" color="blue-grey darken-2">
+                      <vue-markdown :source="item.text"></vue-markdown>
+                    </v-card>
                   </v-flex>
                 </v-layout>
-            </v-container>
+              </v-container>
           </v-card>
           </template>
           <template v-else-if="statusCode == 500">
@@ -66,13 +47,13 @@
 <script>
 import { mapState } from 'vuex'
 export default {
-  name: 'ChapterSixThemeTwelve',
+  name: 'ChapterEightThemeTwo',
   data: () => ({
-    theme: 'Theme Twelve'
+    theme: 'Theme Two'
   }),
   computed: mapState(['loading', 'statusCode', 'data']),
   created () {
-    this.$store.dispatch('getTheme', { chapter: 'Six', theme: 'Twelve' })
+    this.$store.dispatch('getTheme', { chapter: 'Eight', theme: 'Two' })
   }
 }
 </script>

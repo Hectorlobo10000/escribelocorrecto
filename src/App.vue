@@ -107,6 +107,38 @@
         </v-layout>
       </v-container>
     </v-content>
+    <template>
+      <v-footer height="auto" color="blue darken-3">
+        <v-container fluid grid-list-sm>
+          <v-layout row wrap class="ml-2 mt-4">
+            <v-flex xs12 sm4 md4 lg4 xl4>
+              <v-card class="pl-2">
+                <v-layout wrap grid-list-xs>
+                  <p>Otros Proyectos</p>
+                  <v-flex v-for="item in projects" :key="item.link" xs12>
+                    <v-btn flat round> {{ item.text }} </v-btn>
+                  </v-flex>
+                </v-layout>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 sm4 md4 lg4 xl4>
+              <v-card>
+                <p>hola</p>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 sm4 md4 lg4 xl4>
+              <v-card>
+                <p>hola</p>
+              </v-card>
+            </v-flex>
+            <v-divider></v-divider>
+            <v-flex blue darken-3 py-3 text-xs-center white--text xs12 >
+            &copy;2018 — <strong>Honduras en sus Manos</strong>
+          </v-flex>
+          </v-layout>
+        </v-container>
+      </v-footer>
+    </template>
   </v-app>
 </template>
 
@@ -209,14 +241,14 @@ export default {
         children: [
           { icon: 'school', text: 'El sustantivo', link: '/capitulo/7/tema/1' },
           { icon: 'school', text: 'El adjetivo', link: '/capitulo/7/tema/2' },
-          { icon: 'school', text: 'El género' },
-          { icon: 'school', text: 'El número' },
-          { icon: 'school', text: 'El artículo' },
-          { icon: 'school', text: 'El pronombre' },
-          { icon: 'school', text: 'El verbo' },
-          { icon: 'school', text: 'Formas verbales' },
-          { icon: 'school', text: 'El gerundio' },
-          { icon: 'school', text: 'El adverbio' }
+          { icon: 'school', text: 'El género', link: '/capitulo/7/tema/3' },
+          { icon: 'school', text: 'El número', link: '/capitulo/7/tema/4' },
+          { icon: 'school', text: 'El artículo', link: '/capitulo/7/tema/5' },
+          { icon: 'school', text: 'El pronombre', link: '/capitulo/7/tema/6' },
+          { icon: 'school', text: 'El verbo', link: '/capitulo/7/tema/7' },
+          { icon: 'school', text: 'Formas verbales', link: '/capitulo/7/tema/8' },
+          { icon: 'school', text: 'El gerundio', link: '/capitulo/7/tema/9' },
+          { icon: 'school', text: 'El adverbio', link: '/capitulo/7/tema/10' }
         ]
       },
       {
@@ -225,9 +257,9 @@ export default {
         text: 'Capítulo 8',
         model: false,
         children: [
-          { icon: 'school', text: 'Palabras que se escriben separadas' },
-          { icon: 'school', text: 'Palabras que se escriben juntas' },
-          { icon: 'school', text: 'Forman una o dos palabras según los casos' }
+          { icon: 'school', text: 'Palabras que se escriben separadas', link: '/capitulo/8/tema/1' },
+          { icon: 'school', text: 'Palabras que se escriben juntas', link: '/capitulo/8/tema/2' },
+          { icon: 'school', text: 'Forman una o dos palabras según los casos', link: '/capitulo/8/tema/3' }
         ]
       },
       {
@@ -236,13 +268,22 @@ export default {
         text: 'Capítulo 9',
         model: false,
         children: [
-          { icon: 'school', text: 'Vocablos de doble grafía' },
-          { icon: 'school', text: 'Vocablos de doble acentuación' },
-          { icon: 'school', text: 'Etimologías: listado de prefijos y sufijos' },
+          { icon: 'school', text: 'Vocablos de doble grafía', link: '/capitulo/9/tema/1' },
+          { icon: 'school', text: 'Vocablos de doble acentuación', link: '/capitulo/9/tema/2' },
+          { icon: 'school', text: 'Etimologías: listado de prefijos y sufijos', link: '/capitulo/9/tema/3' },
           { icon: 'school', text: 'Diccionario de voces con dificultad ortográfica' },
           { icon: 'school', text: 'HONDUREÑISMOS, REGIONALISMOS, EXTRANGERIMOS' }
         ]
       }
+    ],
+    projects: [
+      { text: 'Escribelo Correcto', link: 'http://escribelocorrecto.com/' },
+      { text: 'Radio Mickyandonie', link: 'http://www.mickyandonie.com/radio' },
+      { text: 'Lea Honduras', link: 'http://leahonduras.com/' },
+      { text: 'Hondurasensusmanos fotos', link: 'http://www.hondurasensusmanos.com/fotos' },
+      { text: 'Hondurasensusmanos Noticias', link: 'http://www.hondurasensusmanos.info/' },
+      { text: 'Hondurasensusmanos Turismo', link: 'http://www.rinconesdehonduras.info/' },
+      { text: 'Ferias de Honduras', link: 'http://www.hondurasensusmanos.com/feriasdehonduras' }
     ]
   }),
   methods: {

@@ -46,6 +46,22 @@ import ChapterSixThemeTwelve from '@/components/ChapterSix/ThemeTwelve'
 // Chapter Seven
 import ChapterSevenThemeOne from '@/components/ChapterSeven/ThemeOne'
 import ChapterSevenThemeTwo from '@/components/ChapterSeven/ThemeTwo'
+import ChapterSevenThemeThree from '@/components/ChapterSeven/ThemeThree'
+import ChapterSevenThemeFour from '@/components/ChapterSeven/ThemeFour'
+import ChapterSevenThemeFive from '@/components/ChapterSeven/ThemeFive'
+import ChapterSevenThemeSix from '@/components/ChapterSeven/ThemeSix'
+import ChapterSevenThemeSeven from '@/components/ChapterSeven/ThemeSeven'
+import ChapterSevenThemeEight from '@/components/ChapterSeven/ThemeEight'
+import ChapterSevenThemeNine from '@/components/ChapterSeven/ThemeNine'
+import ChapterSevenThemeTen from '@/components/ChapterSeven/ThemeTen'
+// Chapter Eight
+import ChapterEightThemeOne from '@/components/ChapterEight/ThemeOne'
+import ChapterEightThemeTwo from '@/components/ChapterEight/ThemeTwo'
+import ChapterEightThemeThree from '@/components/ChapterEight/ThemeThree'
+// Chapter Nine
+import ChapterNineThemeOne from '@/components/ChapterNine/ThemeOne'
+import ChapterNineThemeTwo from '@/components/ChapterNine/ThemeTwo'
+import ChapterNineThemeThree from '@/components/ChapterNine/ThemeThree'
 
 Vue.use(Router)
 
@@ -240,6 +256,76 @@ export default new Router({
       path: '/capitulo/7/tema/2',
       name: 'ChapterSevenThemeTwo',
       component: ChapterSevenThemeTwo
+    },
+    {
+      path: '/capitulo/7/tema/3',
+      name: 'ChapterSevenThemeThree',
+      component: ChapterSevenThemeThree
+    },
+    {
+      path: '/capitulo/7/tema/4',
+      name: 'ChapterSevenThemeFour',
+      component: ChapterSevenThemeFour
+    },
+    {
+      path: '/capitulo/7/tema/5',
+      name: 'ChapterSevenThemeFive',
+      component: ChapterSevenThemeFive
+    },
+    {
+      path: '/capitulo/7/tema/6',
+      name: 'ChapterSevenThemeSix',
+      component: ChapterSevenThemeSix
+    },
+    {
+      path: '/capitulo/7/tema/7',
+      name: 'ChapterSevenThemeSeven',
+      component: ChapterSevenThemeSeven
+    },
+    {
+      path: '/capitulo/7/tema/8',
+      name: 'ChapterSevenThemeEight',
+      component: ChapterSevenThemeEight
+    },
+    {
+      path: '/capitulo/7/tema/9',
+      name: 'ChapterSevenThemeNine',
+      component: ChapterSevenThemeNine
+    },
+    {
+      path: '/capitulo/7/tema/10',
+      name: 'ChapterSevenThemeTen',
+      component: ChapterSevenThemeTen
+    },
+    {
+      path: '/capitulo/8/tema/1',
+      name: 'ChapterEightThemeOne',
+      component: ChapterEightThemeOne
+    },
+    {
+      path: '/capitulo/8/tema/2',
+      name: 'ChapterEightThemeTwo',
+      component: ChapterEightThemeTwo
+    },
+    {
+      path: '/capitulo/8/tema/3',
+      name: 'ChapterEightThemeThree',
+      component: ChapterEightThemeThree
+    },
+    {
+      path: '/capitulo/9/tema/1',
+      name: 'ChapterNineThemeOne',
+      component: ChapterNineThemeOne
+    },
+    {
+      path: '/capitulo/9/tema/2',
+      name: 'ChapterNineThemeTwo',
+      component: ChapterNineThemeTwo
+    },
+    {
+      path: '/capitulo/9/tema/3',
+      name: 'ChapterNineThemeThree',
+      component: ChapterNineThemeThree
     }
   ],
   mode: 'history',
