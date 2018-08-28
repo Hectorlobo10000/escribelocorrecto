@@ -1,19 +1,10 @@
 <template>
   <v-app id="inspire">
     <v-navigation-drawer
-      :clipped="$vuetify.breakpoint.lgAndUp"
-      v-model="drawer"
-      fixed
-      app
-    >
+      :clipped="$vuetify.breakpoint.lgAndUp" v-model="drawer" fixed app temporary>
       <v-list dense>
         <template v-for="item in items">
-          <v-layout
-            v-if="item.heading"
-            :key="item.heading"
-            row
-            align-center
-          >
+          <v-layout v-if="item.heading" :key="item.heading" row align-center >
             <v-flex xs6>
               <v-subheader v-if="item.heading">
                 {{ item.heading }}
@@ -23,13 +14,7 @@
               <a href="#!" class="body-2 black--text">EDIT</a>
             </v-flex>
           </v-layout>
-          <v-list-group
-            v-else-if="item.children"
-            v-model="item.model"
-            :key="item.text"
-            :prepend-icon="item.model ? item.icon : item['icon-alt']"
-            append-icon=""
-          >
+          <v-list-group v-else-if="item.children" v-model="item.model" :key="item.text" :prepend-icon="item.model ? item.icon : item['icon-alt']" append-icon="">
             <v-list-tile slot="activator">
               <v-list-tile-content>
                 <v-list-tile-title>
@@ -37,11 +22,7 @@
                 </v-list-tile-title>
               </v-list-tile-content>
             </v-list-tile>
-            <v-list-tile
-              v-for="(child, i) in item.children"
-              :key="i"
-              @click="navigateTo(child.link)"
-            >
+            <v-list-tile v-for="(child, i) in item.children" :key="i" @click="navigateTo(child.link)">
               <v-list-tile-action v-if="child.icon">
                 <v-icon>{{ child.icon }}</v-icon>
               </v-list-tile-action>
@@ -65,80 +46,68 @@
         </template>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar
-      :clipped-left="$vuetify.breakpoint.lgAndUp"
-      color="blue darken-3"
-      dark
-      app
-      fixed
-    >
+    <v-toolbar :clipped-left="$vuetify.breakpoint.lgAndUp" color="blue darken-3" dark app fixed>
       <v-toolbar-title style="width: 300px" class="ml-0 pl-3">
         <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
         <span class="sm-and-down">{{ title }}</span>
       </v-toolbar-title>
-      <v-text-field
-        v-if="false"
-        flat
-        solo-inverted
-        prepend-icon="search"
-        label="Search"
-        class="hidden-sm-and-down"
-      ></v-text-field>
       <v-spacer></v-spacer>
-      <v-btn icon v-if="false">
-        <v-icon>apps</v-icon>
-      </v-btn>
-      <v-btn icon v-if="false">
-        <v-icon>notifications</v-icon>
-      </v-btn>
-      <v-btn icon large v-if="false">
-        <v-avatar size="32px" tile>
-          <img
-            src="https://vuetifyjs.com/static/doc-images/logo.svg"
-            alt="Vuetify"
-          >
+      <v-btn icon large  @click="navigateTo(logo.link)">
+        <v-avatar size="42px" tile>
+          <img :src="logo.path" alt="Vuetify">
         </v-avatar>
       </v-btn>
     </v-toolbar>
     <v-content>
-      <v-container fluid fill-height>
+      <v-container fluid fill-height class="pl-0 pr-0 pt-0 pb-0">
         <v-layout justify-center align-center>
-          <router-view></router-view>
+          <v-flex xs12 sm12 md12 lg12 xl12>
+            <router-view></router-view>
+          </v-flex>
         </v-layout>
       </v-container>
     </v-content>
-    <template>
-      <v-footer height="auto" color="blue darken-3">
-        <v-container fluid grid-list-sm>
-          <v-layout row wrap class="ml-2 mt-4">
-            <v-flex xs12 sm4 md4 lg4 xl4>
-              <v-card class="pl-2">
-                <v-layout wrap grid-list-xs>
-                  <p>Otros Proyectos</p>
-                  <v-flex v-for="item in projects" :key="item.link" xs12>
-                    <v-btn flat round> {{ item.text }} </v-btn>
-                  </v-flex>
-                </v-layout>
-              </v-card>
-            </v-flex>
-            <v-flex xs12 sm4 md4 lg4 xl4>
-              <v-card>
-                <p>hola</p>
-              </v-card>
-            </v-flex>
-            <v-flex xs12 sm4 md4 lg4 xl4>
-              <v-card>
-                <p>hola</p>
-              </v-card>
-            </v-flex>
-            <v-divider></v-divider>
-            <v-flex blue darken-3 py-3 text-xs-center white--text xs12 >
-            &copy;2018 — <strong>Honduras en sus Manos</strong>
+    <v-footer height="auto" color="grey lighten-4">
+      <v-container fluid grid-list-sm>
+        <v-layout row wrap class="mt-2">
+          <v-flex xs12 sm4 md4 lg4 xl4>
+            <v-card class="pl-2" flat color="grey lighten-4">
+              <v-layout wrap grid-list-xs>
+                <span class="headline">Visitas</span>
+                <v-flex xs12>
+                  <img src="http://s01.flagcounter.com/count/PAhb/bg_333333/txt_FFFFFF/border_CCCCCC/columns_3/maxflags_250/viewers_Visitantes/labels_1/pageviews_1/flags_1/"  border="0" style="opacity:1;width: 300px;"/>
+                </v-flex>
+              </v-layout>
+            </v-card>
           </v-flex>
-          </v-layout>
-        </v-container>
-      </v-footer>
-    </template>
+          <v-flex xs12 sm4 md4 lg4 xl4>
+            <v-card class="pl-2" flat color="grey lighten-4">
+              <v-layout wrap grid-list-xs>
+                <span class="headline">Visitenos</span>
+                <v-flex xs12>
+                  <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2F%23%21%2Fpages%2FEscribelocorrectocom%2F153123494754696&amp;width=350&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=true&amp;height=400" scrolling="no" frameborder="0" style="border:none; overflow:hidden;height: 325px;" allowtransparency="true"/>
+                </v-flex>
+              </v-layout>
+            </v-card>
+          </v-flex>
+          <v-flex xs12 sm4 md4 lg4 xl4>
+            <v-card class="pl-2" flat color="grey lighten-4">
+              <v-layout wrap grid-list-xs>
+                <span class="headline">Otros Proyectos</span>
+                <v-flex v-for="item in projects" :key="item.link" xs12>
+                  <v-btn flat round @click="newTab(item.link)"> {{ item.text }} </v-btn>
+                </v-flex>
+              </v-layout>
+            </v-card>
+          </v-flex>
+          <v-divider></v-divider>
+          <v-divider></v-divider>
+          <v-flex grey darken-3 py-3 text-xs-center white--text xs12 >
+          &copy;2018 — <strong>Otro proyecto más Honduras en sus Manos</strong>
+        </v-flex>
+        </v-layout>
+      </v-container>
+    </v-footer>
   </v-app>
 </template>
 
@@ -277,18 +246,24 @@ export default {
       }
     ],
     projects: [
-      { text: 'Escribelo Correcto', link: 'http://escribelocorrecto.com/' },
       { text: 'Radio Mickyandonie', link: 'http://www.mickyandonie.com/radio' },
       { text: 'Lea Honduras', link: 'http://leahonduras.com/' },
       { text: 'Hondurasensusmanos fotos', link: 'http://www.hondurasensusmanos.com/fotos' },
       { text: 'Hondurasensusmanos Noticias', link: 'http://www.hondurasensusmanos.info/' },
       { text: 'Hondurasensusmanos Turismo', link: 'http://www.rinconesdehonduras.info/' },
       { text: 'Ferias de Honduras', link: 'http://www.hondurasensusmanos.com/feriasdehonduras' }
-    ]
+    ],
+    logo: {
+      path: '/static/doc-images/books.svg',
+      link: '/'
+    }
   }),
   methods: {
     navigateTo: function (nav) {
       this.$router.push(nav)
+    },
+    newTab: function (link) {
+      window.open(link)
     }
   },
   props: {
