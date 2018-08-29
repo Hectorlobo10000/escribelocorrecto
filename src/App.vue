@@ -262,17 +262,17 @@ export default {
         children: [
           { icon: 'library_books', text: 'Las vocales', link: '/grado/1/thema/1' },
           { icon: 'library_books', text: 'El abecedario', link: '/grado/1/thema/2' },
-          { icon: 'library_books', text: 'Las mayúsculas', link: '' },
-          { icon: 'library_books', text: 'Las minúsculas', link: '' },
-          { icon: 'library_books', text: 'Sustantivos propios', link: '' },
-          { icon: 'library_books', text: 'Sustantivos comunes', link: '' },
-          { icon: 'library_books', text: 'Palabras largas y cortas', link: '' },
-          { icon: 'library_books', text: 'Diccionario', link: '' },
-          { icon: 'library_books', text: 'Separación silábica', link: '' },
-          { icon: 'library_books', text: 'Sujeto y predicado', link: '' },
-          { icon: 'library_books', text: 'Las sílabas', link: '' },
-          { icon: 'library_books', text: 'El acento gráfico', link: '' },
-          { icon: 'library_books', text: 'Dictado', link: '' }
+          { icon: 'library_books', text: 'Las mayúsculas', link: '/grado/1/thema/3' },
+          { icon: 'library_books', text: 'Las minúsculas', link: '/grado/1/thema/4' },
+          { icon: 'library_books', text: 'Sustantivos propios', link: '/grado/1/thema/5' },
+          { icon: 'library_books', text: 'Sustantivos comunes', link: '/grado/1/thema/6' },
+          { icon: 'library_books', text: 'Palabras largas y cortas', link: '/grado/1/thema/7' },
+          { icon: 'library_books', text: 'Diccionario', link: '/grado/1/thema/8' },
+          { icon: 'library_books', text: 'Separación silábica', link: '/grado/1/thema/9' },
+          { icon: 'library_books', text: 'Sujeto y predicado', link: '/grado/1/thema/10' },
+          { icon: 'library_books', text: 'Las sílabas', link: '/grado/1/thema/11' },
+          { icon: 'library_books', text: 'El acento gráfico', link: '/grado/1/thema/12' },
+          { icon: 'library_books', text: 'Dictado', link: '/grado/1/thema/13' }
         ]
       }
     ],

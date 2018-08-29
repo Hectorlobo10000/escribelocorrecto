@@ -14,13 +14,13 @@
             <v-divider></v-divider>
             <v-card-text>
               <h2 class="headline mb-3"> {{ data.subTheme }}</h2>
-              <!-- <p v-for="(item, key) in data.paragraphs" :key="key">
+              <p v-for="(item, key) in data.paragraphs" :key="key">
                 <vue-markdown :source="item.text.split('\\n').join('\n').split('\\t').join('\t')"></vue-markdown>
-              </p> -->
+              </p>
             </v-card-text>
             <v-container fluid grid-list-sm>
               <v-layout row wrap class="ml-2">
-                <v-flex xs12 sm4 md4 lg4 xl4 v-for="(item, index) in data.words" :key="index">
+                <v-flex xs12 sm3 md3 lg3 xl3 v-for="(item, index) in data.examples" :key="index">
                   <v-card class="pl-2 pt-2 mr-2 white--text" color="blue-grey darken-2">
                     <vue-markdown :source="item.text"></vue-markdown>
                   </v-card>
@@ -47,13 +47,13 @@
 <script>
 import { mapState } from 'vuex'
 export default {
-  name: 'ChapterNineThemeOne',
+  name: 'GradeOneThemeSeven',
   data: () => ({
-    theme: 'Theme One'
+    theme: 'Theme Seven'
   }),
   computed: mapState(['loading', 'statusCode', 'data']),
   created () {
-    this.$store.dispatch('getTheme', { chapter: 'Nine', theme: 'One' })
+    this.$store.dispatch('getThemeGrade', { grade: 'One', theme: 'Seven' })
   }
 }
 </script>

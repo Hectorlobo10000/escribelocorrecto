@@ -19,14 +19,14 @@
               </p> -->
             </v-card-text>
             <v-container fluid grid-list-sm>
-                <v-layout row wrap class="ml-2">
-                  <v-flex xs12 sm3 md3 lg3 xl3 v-for="(item, index) in data.words" :key="index">
-                    <v-card class="pl-2 pt-2 mr-2 white--text" color="blue-grey darken-2">
-                      <vue-markdown :source="item.text"></vue-markdown>
-                    </v-card>
-                  </v-flex>
-                </v-layout>
-              </v-container>
+              <v-layout row wrap class="ml-2">
+                <v-flex xs12 sm3 md3 lg3 xl3 v-for="(item, index) in data.words" :key="index">
+                  <v-card class="pl-2 pt-2 mr-2 white--text" color="blue-grey darken-2">
+                    <vue-markdown :source="item.text"></vue-markdown>
+                  </v-card>
+                </v-flex>
+              </v-layout>
+            </v-container>
           </v-card>
           </template>
           <template v-else-if="statusCode == 500">

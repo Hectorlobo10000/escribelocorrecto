@@ -67,6 +67,17 @@ import Grades from '@/components/Grades'
 // GradeOne
 import GradeOne from '@/components/Grades/GradeOne/ThemeOne'
 import GradeTwo from '@/components/Grades/GradeOne/ThemeTwo'
+import GradeThree from '@/components/Grades/GradeOne/ThemeThree'
+import GradeFour from '@/components/Grades/GradeOne/ThemeFour'
+import GradeFive from '@/components/Grades/GradeOne/ThemeFive'
+import GradeSix from '@/components/Grades/GradeOne/ThemeSix'
+import GradeSeven from '@/components/Grades/GradeOne/ThemeSeven'
+import GradeEight from '@/components/Grades/GradeOne/ThemeEight'
+import GradeNine from '@/components/Grades/GradeOne/ThemeNine'
+import GradeTen from '@/components/Grades/GradeOne/ThemeTen'
+import GradeEleven from '@/components/Grades/GradeOne/ThemeEleven'
+import GradeTwelve from '@/components/Grades/GradeOne/ThemeTwelve'
+import GradeThirteen from '@/components/Grades/GradeOne/ThemeThirteen'
 
 Vue.use(Router)
 
@@ -346,6 +357,61 @@ export default new Router({
       path: '/grado/1/thema/2',
       name: 'GradeTwo',
       component: GradeTwo
+    },
+    {
+      path: '/grado/1/thema/3',
+      name: 'GradeThree',
+      component: GradeThree
+    },
+    {
+      path: '/grado/1/thema/4',
+      name: 'GradeFour',
+      component: GradeFour
+    },
+    {
+      path: '/grado/1/thema/5',
+      name: 'GradeFive',
+      component: GradeFive
+    },
+    {
+      path: '/grado/1/thema/6',
+      name: 'GradeSix',
+      component: GradeSix
+    },
+    {
+      path: '/grado/1/thema/7',
+      name: 'GradeSeven',
+      component: GradeSeven
+    },
+    {
+      path: '/grado/1/thema/8',
+      name: 'GradeEight',
+      component: GradeEight
+    },
+    {
+      path: '/grado/1/thema/9',
+      name: 'GradeNine',
+      component: GradeNine
+    },
+    {
+      path: '/grado/1/thema/10',
+      name: 'GradeTen',
+      component: GradeTen
+    },
+    {
+      path: '/grado/1/thema/11',
+      name: 'GradeEleven',
+      component: GradeEleven
+    },
+    {
+      path: '/grado/1/thema/12',
+      name: 'GradeTwelve',
+      component: GradeTwelve
+    },
+    {
+      path: '/grado/1/thema/13',
+      name: 'GradeThirteen',
+      component: GradeThirteen
     }
   ],
   mode: 'history',
