@@ -31,6 +31,16 @@ export const store = new Vuex.Store({
           /* console.log(response.data) */
           context.commit('loading', false)
         })
+    },
+    getThemeGrade: (context, params) => {
+      axios.get(`https://api-escribelo-correcto.herokuapp.com/api/grades/${params.grade}/themes/${params.theme}`)
+        .then(response => {
+          context.commit('loading', true)
+          context.commit('statusCode', response.status)
+          context.commit('data', response.data)
+          /* console.log(response.data) */
+          context.commit('loading', false)
+        })
     }
   }
 })

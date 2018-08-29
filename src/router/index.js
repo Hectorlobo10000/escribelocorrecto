@@ -62,6 +62,11 @@ import ChapterEightThemeThree from '@/components/ChapterEight/ThemeThree'
 import ChapterNineThemeOne from '@/components/ChapterNine/ThemeOne'
 import ChapterNineThemeTwo from '@/components/ChapterNine/ThemeTwo'
 import ChapterNineThemeThree from '@/components/ChapterNine/ThemeThree'
+// Grades
+import Grades from '@/components/Grades'
+// GradeOne
+import GradeOne from '@/components/Grades/GradeOne/ThemeOne'
+import GradeTwo from '@/components/Grades/GradeOne/ThemeTwo'
 
 Vue.use(Router)
 
@@ -326,6 +331,21 @@ export default new Router({
       path: '/capitulo/9/tema/3',
       name: 'ChapterNineThemeThree',
       component: ChapterNineThemeThree
+    },
+    {
+      path: '/grados',
+      name: 'Grades',
+      component: Grades
+    },
+    {
+      path: '/grado/1/thema/1',
+      name: 'GradeOne',
+      component: GradeOne
+    },
+    {
+      path: '/grado/1/thema/2',
+      name: 'GradeTwo',
+      component: GradeTwo
     }
   ],
   mode: 'history',

@@ -1,5 +1,6 @@
 <template>
   <v-app id="inspire">
+    <!-- drawer -->
     <v-navigation-drawer
       :clipped="$vuetify.breakpoint.lgAndUp" v-model="drawer" fixed app temporary>
       <v-list dense>
@@ -46,17 +47,24 @@
         </template>
       </v-list>
     </v-navigation-drawer>
+    <!-- toolbar -->
     <v-toolbar :clipped-left="$vuetify.breakpoint.lgAndUp" color="blue darken-3" dark app fixed>
-      <v-toolbar-title style="width: 300px" class="ml-0 pl-3">
+      <v-toolbar-title style="width: 400px" class="ml-0 pl-3">
         <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+        <v-btn icon large @click="navigateTo(logo.link)">
+          <v-avatar size="42px" tile>
+            <img :src="logo.path" alt="Escribelo Correcto">
+          </v-avatar>
+        </v-btn>
         <span class="sm-and-down">{{ title }}</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn icon large  @click="navigateTo(logo.link)">
-        <v-avatar size="42px" tile>
-          <img :src="logo.path" alt="Vuetify">
-        </v-avatar>
-      </v-btn>
+      <v-tooltip bottom v-for="item in btnToolbar" :key="item.text">
+        <v-btn icon large slot="activator">
+          <v-icon>{{ item.icon }}</v-icon>
+        </v-btn>
+        <span>{{ item.text }}</span>
+      </v-tooltip>
     </v-toolbar>
     <v-content>
       <v-container fluid fill-height class="pl-0 pr-0 pt-0 pb-0">
@@ -67,6 +75,7 @@
         </v-layout>
       </v-container>
     </v-content>
+    <!-- footer -->
     <v-footer height="auto" color="grey lighten-4">
       <v-container fluid grid-list-sm>
         <v-layout row wrap class="mt-2">
@@ -119,9 +128,10 @@ export default {
     title: 'Escribelo Correcto',
     items: [
       { icon: 'home', text: 'Home', link: '/' },
-      { icon: 'contact_mail', text: 'Contactenos', link: '/contactenos' },
-      { icon: 'comment', text: 'Déjanos tu comentario', link: '/comentarios' },
+      /* { icon: 'contact_mail', text: 'Contactenos', link: '/contactenos' }, */
+      /* { icon: 'comment', text: 'Déjanos tu comentario', link: '/comentarios' }, */
       { icon: 'book', text: 'Capítulos', link: '/capitulos' },
+      { icon: 'book', text: 'Contenido por grados', link: '/grados' },
       {
         icon: 'keyboard_arrow_up',
         'icon-alt': 'keyboard_arrow_down',
@@ -243,6 +253,27 @@ export default {
           { icon: 'school', text: 'Diccionario de voces con dificultad ortográfica' },
           { icon: 'school', text: 'HONDUREÑISMOS, REGIONALISMOS, EXTRANGERIMOS' }
         ]
+      },
+      {
+        icon: 'keyboard_arrow_up',
+        'icon-alt': 'keyboard_arrow_down',
+        text: 'Primer Grado',
+        model: false,
+        children: [
+          { icon: 'library_books', text: 'Las vocales', link: '/grado/1/thema/1' },
+          { icon: 'library_books', text: 'El abecedario', link: '/grado/1/thema/2' },
+          { icon: 'library_books', text: 'Las mayúsculas', link: '' },
+          { icon: 'library_books', text: 'Las minúsculas', link: '' },
+          { icon: 'library_books', text: 'Sustantivos propios', link: '' },
+          { icon: 'library_books', text: 'Sustantivos comunes', link: '' },
+          { icon: 'library_books', text: 'Palabras largas y cortas', link: '' },
+          { icon: 'library_books', text: 'Diccionario', link: '' },
+          { icon: 'library_books', text: 'Separación silábica', link: '' },
+          { icon: 'library_books', text: 'Sujeto y predicado', link: '' },
+          { icon: 'library_books', text: 'Las sílabas', link: '' },
+          { icon: 'library_books', text: 'El acento gráfico', link: '' },
+          { icon: 'library_books', text: 'Dictado', link: '' }
+        ]
       }
     ],
     projects: [
@@ -256,7 +287,11 @@ export default {
     logo: {
       path: '/static/doc-images/books.svg',
       link: '/'
-    }
+    },
+    btnToolbar: [
+      { text: 'Comentanos', icon: 'comment' },
+      { text: 'Contactanos', icon: 'contact_mail' }
+    ]
   }),
   methods: {
     navigateTo: function (nav) {
