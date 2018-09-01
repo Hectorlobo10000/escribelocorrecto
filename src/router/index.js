@@ -64,20 +64,30 @@ import ChapterNineThemeTwo from '@/components/ChapterNine/ThemeTwo'
 import ChapterNineThemeThree from '@/components/ChapterNine/ThemeThree'
 // Grades
 import Grades from '@/components/Grades'
-// GradeOne
-import GradeOne from '@/components/Grades/GradeOne/ThemeOne'
-import GradeTwo from '@/components/Grades/GradeOne/ThemeTwo'
-import GradeThree from '@/components/Grades/GradeOne/ThemeThree'
-import GradeFour from '@/components/Grades/GradeOne/ThemeFour'
-import GradeFive from '@/components/Grades/GradeOne/ThemeFive'
-import GradeSix from '@/components/Grades/GradeOne/ThemeSix'
-import GradeSeven from '@/components/Grades/GradeOne/ThemeSeven'
-import GradeEight from '@/components/Grades/GradeOne/ThemeEight'
-import GradeNine from '@/components/Grades/GradeOne/ThemeNine'
-import GradeTen from '@/components/Grades/GradeOne/ThemeTen'
-import GradeEleven from '@/components/Grades/GradeOne/ThemeEleven'
-import GradeTwelve from '@/components/Grades/GradeOne/ThemeTwelve'
-import GradeThirteen from '@/components/Grades/GradeOne/ThemeThirteen'
+// Grade One
+import GradeOneThemeOne from '@/components/Grades/GradeOne/ThemeOne'
+import GradeOneThemeTwo from '@/components/Grades/GradeOne/ThemeTwo'
+import GradeOneThemeThree from '@/components/Grades/GradeOne/ThemeThree'
+import GradeOneThemeFour from '@/components/Grades/GradeOne/ThemeFour'
+import GradeOneThemeFive from '@/components/Grades/GradeOne/ThemeFive'
+import GradeOneThemeSix from '@/components/Grades/GradeOne/ThemeSix'
+import GradeOneThemeSeven from '@/components/Grades/GradeOne/ThemeSeven'
+import GradeOneThemeEight from '@/components/Grades/GradeOne/ThemeEight'
+import GradeOneThemeNine from '@/components/Grades/GradeOne/ThemeNine'
+import GradeOneThemeTen from '@/components/Grades/GradeOne/ThemeTen'
+import GradeOneThemeEleven from '@/components/Grades/GradeOne/ThemeEleven'
+import GradeOneThemeTwelve from '@/components/Grades/GradeOne/ThemeTwelve'
+import GradeOneThemeThirteen from '@/components/Grades/GradeOne/ThemeThirteen'
+// Grade Two
+import GradeTwoThemeOne from '@/components/Grades/GradeTwo/ThemeOne'
+import GradeTwoThemeTwo from '@/components/Grades/GradeTwo/ThemeTwo'
+import GradeTwoThemeThree from '@/components/Grades/GradeTwo/ThemeThree'
+import GradeTwoThemeFour from '@/components/Grades/GradeTwo/ThemeFour'
+import GradeTwoThemeFive from '@/components/Grades/GradeTwo/ThemeFive'
+import GradeTwoThemeSix from '@/components/Grades/GradeTwo/ThemeSix'
+import GradeTwoThemeSeven from '@/components/Grades/GradeTwo/ThemeSeven'
+import GradeTwoThemeEight from '@/components/Grades/GradeTwo/ThemeEight'
+import GradeTwoThemeNine from '@/components/Grades/GradeTwo/ThemeNine'
 
 Vue.use(Router)
 
@@ -350,68 +360,113 @@ export default new Router({
     },
     {
       path: '/grado/1/thema/1',
-      name: 'GradeOne',
-      component: GradeOne
+      name: 'GradeOneThemeOne',
+      component: GradeOneThemeOne
     },
     {
       path: '/grado/1/thema/2',
-      name: 'GradeTwo',
-      component: GradeTwo
+      name: 'GradeOneThemeTwo',
+      component: GradeOneThemeTwo
     },
     {
       path: '/grado/1/thema/3',
-      name: 'GradeThree',
-      component: GradeThree
+      name: 'GradeOneThemeThree',
+      component: GradeOneThemeThree
     },
     {
       path: '/grado/1/thema/4',
-      name: 'GradeFour',
-      component: GradeFour
+      name: 'GradeOneThemeFour',
+      component: GradeOneThemeFour
     },
     {
       path: '/grado/1/thema/5',
-      name: 'GradeFive',
-      component: GradeFive
+      name: 'GradeOneThemeFive',
+      component: GradeOneThemeFive
     },
     {
       path: '/grado/1/thema/6',
-      name: 'GradeSix',
-      component: GradeSix
+      name: 'GradeOneThemeSix',
+      component: GradeOneThemeSix
     },
     {
       path: '/grado/1/thema/7',
-      name: 'GradeSeven',
-      component: GradeSeven
+      name: 'GradeOneThemeSeven',
+      component: GradeOneThemeSeven
     },
     {
       path: '/grado/1/thema/8',
-      name: 'GradeEight',
-      component: GradeEight
+      name: 'GradeOneThemeEight',
+      component: GradeOneThemeEight
     },
     {
       path: '/grado/1/thema/9',
-      name: 'GradeNine',
-      component: GradeNine
+      name: 'GradeOneThemeNine',
+      component: GradeOneThemeNine
     },
     {
       path: '/grado/1/thema/10',
-      name: 'GradeTen',
-      component: GradeTen
+      name: 'GradeOneThemeTen',
+      component: GradeOneThemeTen
     },
     {
       path: '/grado/1/thema/11',
-      name: 'GradeEleven',
-      component: GradeEleven
+      name: 'GradeOneThemeEleven',
+      component: GradeOneThemeEleven
     },
     {
       path: '/grado/1/thema/12',
-      name: 'GradeTwelve',
-      component: GradeTwelve
+      name: 'GradeOneThemeTwelve',
+      component: GradeOneThemeTwelve
     },
     {
       path: '/grado/1/thema/13',
-      name: 'GradeThirteen',
-      component: GradeThirteen
+      name: 'GradeOneThemeThirteen',
+      component: GradeOneThemeThirteen
+    },
+    {
+      path: '/grado/2/thema/1',
+      name: 'GradeTwoThemeOne',
+      component: GradeTwoThemeOne
+    },
+    {
+      path: '/grado/2/thema/2',
+      name: 'GradeTwoThemeTwo',
+      component: GradeTwoThemeTwo
+    },
+    {
+      path: '/grado/2/thema/3',
+      name: 'GradeTwoThemeThree',
+      component: GradeTwoThemeThree
+    },
+    {
+      path: '/grado/2/thema/4',
+      name: 'GradeTwoThemeFour',
+      component: GradeTwoThemeFour
+    },
+    {
+      path: '/grado/2/thema/5',
+      name: 'GradeTwoThemeFive',
+      component: GradeTwoThemeFive
+    },
+    {
+      path: '/grado/2/thema/6',
+      name: 'GradeTwoThemeSix',
+      component: GradeTwoThemeSix
+    },
+    {
+      path: '/grado/2/thema/7',
+      name: 'GradeTwoThemeSeven',
+      component: GradeTwoThemeSeven
+    },
+    {
+      path: '/grado/2/thema/8',
+      name: 'GradeTwoThemeEight',
+      component: GradeTwoThemeEight
+    },
+    {
+      path: '/grado/2/thema/9',
+      name: 'GradeTwoThemeNine',
+      component: GradeTwoThemeNine
     }
   ],
   mode: 'history',

@@ -274,6 +274,32 @@ export default {
           { icon: 'library_books', text: 'El acento gráfico', link: '/grado/1/thema/12' },
           { icon: 'library_books', text: 'Dictado', link: '/grado/1/thema/13' }
         ]
+      },
+      {
+        icon: 'keyboard_arrow_up',
+        'icon-alt': 'keyboard_arrow_down',
+        text: 'Segundo Grado',
+        model: false,
+        children: [
+          { icon: 'library_books', text: 'El alfabeto', link: '/grado/2/thema/1' },
+          { icon: 'library_books', text: 'Uso de las mayúsculas', link: '/grado/2/thema/2' },
+          { icon: 'library_books', text: 'El cartel', link: '/grado/2/thema/3' },
+          { icon: 'library_books', text: 'Fichas del libro', link: '/grado/2/thema/4' },
+          { icon: 'library_books', text: 'La sílaba', link: '/grado/2/thema/5' },
+          { icon: 'library_books', text: 'Uso de la r', link: '/grado/2/thema/6' },
+          { icon: 'library_books', text: 'Poemas,rimas y versos', link: '/grado/2/thema/7' },
+          { icon: 'library_books', text: 'Adjetivos calificativos', link: '/grado/2/thema/8' },
+          { icon: 'library_books', text: 'La descripción', link: '/grado/2/thema/9' },
+          { icon: 'library_books', text: 'Oraciones afirmativas', link: '/grado/2/thema/10' },
+          { icon: 'library_books', text: 'Uso de la by v', link: '/grado/2/thema/11' },
+          { icon: 'library_books', text: 'Trabalenguas', link: '/grado/2/thema/12' },
+          { icon: 'library_books', text: 'Chistes', link: '/grado/2/thema/13' },
+          { icon: 'library_books', text: 'Adivinanzas', link: '/grado/2/thema/14' },
+          { icon: 'library_books', text: 'El diálogo', link: '/grado/2/thema/15' },
+          { icon: 'library_books', text: 'La carta', link: '/grado/2/thema/16' },
+          { icon: 'library_books', text: 'El punto', link: '/grado/2/thema/17' },
+          { icon: 'library_books', text: 'Anécdotas', link: '/grado/2/thema/18' }
+        ]
       }
     ],
     projects: [
