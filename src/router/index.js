@@ -88,6 +88,21 @@ import GradeTwoThemeSix from '@/components/Grades/GradeTwo/ThemeSix'
 import GradeTwoThemeSeven from '@/components/Grades/GradeTwo/ThemeSeven'
 import GradeTwoThemeEight from '@/components/Grades/GradeTwo/ThemeEight'
 import GradeTwoThemeNine from '@/components/Grades/GradeTwo/ThemeNine'
+import GradeTwoThemeTen from '@/components/Grades/GradeTwo/ThemeTen'
+import GradeTwoThemeEleven from '@/components/Grades/GradeTwo/ThemeEleven'
+import GradeTwoThemeTwelve from '@/components/Grades/GradeTwo/ThemeTwelve'
+import GradeTwoThemeThirteen from '@/components/Grades/GradeTwo/ThemeThirteen'
+import GradeTwoThemeFourteen from '@/components/Grades/GradeTwo/ThemeFourteen'
+import GradeTwoThemeFifteen from '@/components/Grades/GradeTwo/ThemeFifteen'
+import GradeTwoThemeSixteen from '@/components/Grades/GradeTwo/ThemeSixteen'
+import GradeTwoThemeSeventeen from '@/components/Grades/GradeTwo/ThemeSeventeen'
+import GradeTwoThemeEighteen from '@/components/Grades/GradeTwo/ThemeEighteen'
+// Grade Three
+import GradeThreeThemeOne from '@/components/Grades/GradeThree/ThemeOne'
+import GradeThreeThemeTwo from '@/components/Grades/GradeThree/ThemeTwo'
+import GradeThreeThemeThree from '@/components/Grades/GradeThree/ThemeThree'
+import GradeThreeThemeFour from '@/components/Grades/GradeThree/ThemeFour'
+import GradeThreeThemeFive from '@/components/Grades/GradeThree/ThemeFive'
 
 Vue.use(Router)
 
@@ -359,117 +374,187 @@ export default new Router({
       component: Grades
     },
     {
-      path: '/grado/1/thema/1',
+      path: '/grado/1/tema/1',
       name: 'GradeOneThemeOne',
       component: GradeOneThemeOne
     },
     {
-      path: '/grado/1/thema/2',
+      path: '/grado/1/tema/2',
       name: 'GradeOneThemeTwo',
       component: GradeOneThemeTwo
     },
     {
-      path: '/grado/1/thema/3',
+      path: '/grado/1/tema/3',
       name: 'GradeOneThemeThree',
       component: GradeOneThemeThree
     },
     {
-      path: '/grado/1/thema/4',
+      path: '/grado/1/tema/4',
       name: 'GradeOneThemeFour',
       component: GradeOneThemeFour
     },
     {
-      path: '/grado/1/thema/5',
+      path: '/grado/1/tema/5',
       name: 'GradeOneThemeFive',
       component: GradeOneThemeFive
     },
     {
-      path: '/grado/1/thema/6',
+      path: '/grado/1/tema/6',
       name: 'GradeOneThemeSix',
       component: GradeOneThemeSix
     },
     {
-      path: '/grado/1/thema/7',
+      path: '/grado/1/tema/7',
       name: 'GradeOneThemeSeven',
       component: GradeOneThemeSeven
     },
     {
-      path: '/grado/1/thema/8',
+      path: '/grado/1/tema/8',
       name: 'GradeOneThemeEight',
       component: GradeOneThemeEight
     },
     {
-      path: '/grado/1/thema/9',
+      path: '/grado/1/tema/9',
       name: 'GradeOneThemeNine',
       component: GradeOneThemeNine
     },
     {
-      path: '/grado/1/thema/10',
+      path: '/grado/1/tema/10',
       name: 'GradeOneThemeTen',
       component: GradeOneThemeTen
     },
     {
-      path: '/grado/1/thema/11',
+      path: '/grado/1/tema/11',
       name: 'GradeOneThemeEleven',
       component: GradeOneThemeEleven
     },
     {
-      path: '/grado/1/thema/12',
+      path: '/grado/1/tema/12',
       name: 'GradeOneThemeTwelve',
       component: GradeOneThemeTwelve
     },
     {
-      path: '/grado/1/thema/13',
+      path: '/grado/1/tema/13',
       name: 'GradeOneThemeThirteen',
       component: GradeOneThemeThirteen
     },
     {
-      path: '/grado/2/thema/1',
+      path: '/grado/2/tema/1',
       name: 'GradeTwoThemeOne',
       component: GradeTwoThemeOne
     },
     {
-      path: '/grado/2/thema/2',
+      path: '/grado/2/tema/2',
       name: 'GradeTwoThemeTwo',
       component: GradeTwoThemeTwo
     },
     {
-      path: '/grado/2/thema/3',
+      path: '/grado/2/tema/3',
       name: 'GradeTwoThemeThree',
       component: GradeTwoThemeThree
     },
     {
-      path: '/grado/2/thema/4',
+      path: '/grado/2/tema/4',
       name: 'GradeTwoThemeFour',
       component: GradeTwoThemeFour
     },
     {
-      path: '/grado/2/thema/5',
+      path: '/grado/2/tema/5',
       name: 'GradeTwoThemeFive',
       component: GradeTwoThemeFive
     },
     {
-      path: '/grado/2/thema/6',
+      path: '/grado/2/tema/6',
       name: 'GradeTwoThemeSix',
       component: GradeTwoThemeSix
     },
     {
-      path: '/grado/2/thema/7',
+      path: '/grado/2/tema/7',
       name: 'GradeTwoThemeSeven',
       component: GradeTwoThemeSeven
     },
     {
-      path: '/grado/2/thema/8',
+      path: '/grado/2/tema/8',
       name: 'GradeTwoThemeEight',
       component: GradeTwoThemeEight
     },
     {
-      path: '/grado/2/thema/9',
+      path: '/grado/2/tema/9',
       name: 'GradeTwoThemeNine',
       component: GradeTwoThemeNine
+    },
+    {
+      path: '/grado/2/tema/10',
+      name: 'GradeTwoThemeTen',
+      component: GradeTwoThemeTen
+    },
+    {
+      path: '/grado/2/tema/11',
+      name: 'GradeTwoThemeEleven',
+      component: GradeTwoThemeEleven
+    },
+    {
+      path: '/grado/2/tema/12',
+      name: 'GradeTwoThemeTwelve',
+      component: GradeTwoThemeTwelve
+    },
+    {
+      path: '/grado/2/tema/13',
+      name: 'GradeTwoThemeThirteen',
+      component: GradeTwoThemeThirteen
+    },
+    {
+      path: '/grado/2/tema/14',
+      name: 'GradeTwoThemeFourteen',
+      component: GradeTwoThemeFourteen
+    },
+    {
+      path: '/grado/2/tema/15',
+      name: 'GradeTwoThemeFifteen',
+      component: GradeTwoThemeFifteen
+    },
+    {
+      path: '/grado/2/tema/16',
+      name: 'GradeTwoThemeSixteen',
+      component: GradeTwoThemeSixteen
+    },
+    {
+      path: '/grado/2/tema/17',
+      name: 'GradeTwoThemeSeventeen',
+      component: GradeTwoThemeSeventeen
+    },
+    {
+      path: '/grado/2/tema/18',
+      name: 'GradeTwoThemeEighteen',
+      component: GradeTwoThemeEighteen
+    },
+    {
+      path: '/grado/3/tema/1',
+      name: 'GradeThreeThemeOne',
+      component: GradeThreeThemeOne
+    },
+    {
+      path: '/grado/3/tema/2',
+      name: 'GradeThreeThemeTwo',
+      component: GradeThreeThemeTwo
+    },
+    {
+      path: '/grado/3/tema/3',
+      name: 'GradeThreeThemeThree',
+      component: GradeThreeThemeThree
+    },
+    {
+      path: '/grado/3/tema/4',
+      name: 'GradeThreeThemeFour',
+      component: GradeThreeThemeFour
+    },
+    {
+      path: '/grado/3/tema/5',
+      name: 'GradeThreeThemeFive',
+      component: GradeThreeThemeFive
     }
   ],
-  mode: 'history',
+  mode: 'history'/* ,
   scrollBehavior (to, from, savePosition) {
     if (savePosition) {
       return savePosition
@@ -477,7 +562,7 @@ export default new Router({
       if (to.hash) {
         return {
           selector: to.hash,
-          offset: { x: 0, y: 70 }
+          offset: { x: 0, y: 0 }
         }
       } else {
         return {
@@ -485,5 +570,5 @@ export default new Router({
         }
       }
     }
-  }
+  } */
 })
