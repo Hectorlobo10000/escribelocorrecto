@@ -103,6 +103,13 @@ import GradeThreeThemeTwo from '@/components/Grades/GradeThree/ThemeTwo'
 import GradeThreeThemeThree from '@/components/Grades/GradeThree/ThemeThree'
 import GradeThreeThemeFour from '@/components/Grades/GradeThree/ThemeFour'
 import GradeThreeThemeFive from '@/components/Grades/GradeThree/ThemeFive'
+import GradeThreeThemeSix from '@/components/Grades/GradeThree/ThemeSix'
+import GradeThreeThemeSeven from '@/components/Grades/GradeThree/ThemeSeven'
+import GradeThreeThemeEight from '@/components/Grades/GradeThree/ThemeEight'
+import GradeThreeThemeNine from '@/components/Grades/GradeThree/ThemeNine'
+import GradeThreeThemeTen from '@/components/Grades/GradeThree/ThemeTen'
+// Grade Four
+import GradeFourThemeOne from '@/components/Grades/GradeFour/ThemeOne'
 
 Vue.use(Router)
 
@@ -552,6 +559,36 @@ export default new Router({
       path: '/grado/3/tema/5',
       name: 'GradeThreeThemeFive',
       component: GradeThreeThemeFive
+    },
+    {
+      path: '/grado/3/tema/6',
+      name: 'GradeThreeThemeSix',
+      component: GradeThreeThemeSix
+    },
+    {
+      path: '/grado/3/tema/7',
+      name: 'GradeThreeThemeSeven',
+      component: GradeThreeThemeSeven
+    },
+    {
+      path: '/grado/3/tema/8',
+      name: 'GradeThreeThemeEight',
+      component: GradeThreeThemeEight
+    },
+    {
+      path: '/grado/3/tema/9',
+      name: 'GradeThreeThemeNine',
+      component: GradeThreeThemeNine
+    },
+    {
+      path: '/grado/3/tema/10',
+      name: 'GradeThreeThemeTen',
+      component: GradeThreeThemeTen
+    },
+    {
+      path: '/grado/4/tema/1',
+      name: 'GradeFourThemeOne',
+      component: GradeFourThemeOne
     }
   ],
   mode: 'history'/* ,
