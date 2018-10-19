@@ -110,10 +110,19 @@ import GradeThreeThemeNine from '@/components/Grades/GradeThree/ThemeNine'
 import GradeThreeThemeTen from '@/components/Grades/GradeThree/ThemeTen'
 // Grade Four
 import GradeFourThemeOne from '@/components/Grades/GradeFour/ThemeOne'
+import GradeFourThemeTwo from '@/components/Grades/GradeFour/ThemeTwo'
+import GradeFourThemeThree from '@/components/Grades/GradeFour/ThemeThree'
+import GradeFourThemeFour from '@/components/Grades/GradeFour/ThemeFour'
+import GradeFourThemeFive from '@/components/Grades/GradeFour/ThemeFive'
+import GradeFourThemeSix from '@/components/Grades/GradeFour/ThemeSix'
+import GradeFourThemeSeven from '@/components/Grades/GradeFour/ThemeSeven'
+import GradeFourThemeEight from '@/components/Grades/GradeFour/ThemeEight'
+import GradeFourThemeNine from '@/components/Grades/GradeFour/ThemeNine'
 
 Vue.use(Router)
 
 export default new Router({
+  base: process.env.ROUTER_BASE,
   routes: [
     {
       path: '/',
@@ -589,6 +598,46 @@ export default new Router({
       path: '/grado/4/tema/1',
       name: 'GradeFourThemeOne',
       component: GradeFourThemeOne
+    },
+    {
+      path: '/grado/4/tema/2',
+      name: 'GradeFourThemeTwo',
+      component: GradeFourThemeTwo
+    },
+    {
+      path: '/grado/4/tema/3',
+      name: 'GradeFourThemeThree',
+      component: GradeFourThemeThree
+    },
+    {
+      path: '/grado/4/tema/4',
+      name: 'GradeFourThemeFour',
+      component: GradeFourThemeFour
+    },
+    {
+      path: '/grado/4/tema/5',
+      name: 'GradeFourThemeFive',
+      component: GradeFourThemeFive
+    },
+    {
+      path: '/grado/4/tema/6',
+      name: 'GradeFourThemeSix',
+      component: GradeFourThemeSix
+    },
+    {
+      path: '/grado/4/tema/7',
+      name: 'GradeFourThemeSeven',
+      component: GradeFourThemeSeven
+    },
+    {
+      path: '/grado/4/tema/8',
+      name: 'GradeFourThemeEight',
+      component: GradeFourThemeEight
+    },
+    {
+      path: '/grado/4/tema/9',
+      name: 'GradeFourThemeNine',
+      component: GradeFourThemeNine
     }
   ],
   mode: 'history'/* ,

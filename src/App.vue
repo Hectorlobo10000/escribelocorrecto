@@ -307,7 +307,7 @@ export default {
         text: 'Tercer Grado',
         model: false,
         children: [
-          { icon: 'library_books', text: '¿Qués la biblioteca?', link: '/grado/3/tema/1' },
+          { icon: 'library_books', text: '¿Qué es la biblioteca?', link: '/grado/3/tema/1' },
           { icon: 'library_books', text: 'Fichas bibliográficas', link: '/grado/3/tema/2' },
           { icon: 'library_books', text: 'Tipos de textos', link: '/grado/3/tema/3' },
           { icon: 'library_books', text: 'El infinitivo', link: '/grado/3/tema/4' },
@@ -331,17 +331,14 @@ export default {
           { icon: 'library_books', text: 'Siglas', link: '/grado/4/tema/4' },
           { icon: 'library_books', text: 'Abreviaturas', link: '/grado/4/tema/5' },
           { icon: 'library_books', text: 'Descripción', link: '/grado/4/tema/6' },
-          { icon: 'library_books', text: 'Ortografía', link: '/grado/4/tema/7' },
-          { icon: 'library_books', text: 'Refranes', link: '/grado/4/tema/8' },
-          { icon: 'library_books', text: 'Verbo', link: '/grado/4/tema/9' },
-          { icon: 'library_books', text: 'La entrevista', link: '/grado/4/tema/10' },
-          { icon: 'library_books', text: 'Poemas', link: '/grado/4/tema/11' },
-          { icon: 'library_books', text: 'Mensajes publicitarios', link: '/grado/4/tema/12' },
-          { icon: 'library_books', text: 'La enciclopedia', link: '/grado/4/tema/13' },
-          { icon: 'library_books', text: 'Uso del guión', link: '/grado/4/tema/14' },
-          { icon: 'library_books', text: 'Siglas', link: '/grado/4/tema/15' },
-          { icon: 'library_books', text: 'Abreviaturas', link: '/grado/4/tema/16' },
-          { icon: 'library_books', text: 'Acentuación gráfica del verbo', link: '/grado/4/tema/17' }
+          { icon: 'library_books', text: 'Refranes', link: '/grado/4/tema/7' },
+          { icon: 'library_books', text: 'Verbo', link: '/grado/4/tema/8' },
+          { icon: 'library_books', text: 'La entrevista', link: '/grado/4/tema/9' },
+          { icon: 'library_books', text: 'Poemas', link: '/grado/4/tema/10' },
+          { icon: 'library_books', text: 'Mensajes publicitarios', link: '/grado/4/tema/11' },
+          { icon: 'library_books', text: 'La enciclopedia', link: '/grado/4/tema/12' },
+          { icon: 'library_books', text: 'Uso del guión', link: '/grado/4/tema/13' },
+          { icon: 'library_books', text: 'Acentuación gráfica del verbo', link: '/grado/4/tema/14' }
         ]
       }
     ],
@@ -354,7 +351,7 @@ export default {
       { text: 'Ferias de Honduras', link: 'http://www.hondurasensusmanos.com/feriasdehonduras' }
     ],
     logo: {
-      path: '/static/doc-images/books.svg',
+      path: 'static/doc-images/books.svg',
       link: '/'
     },
     btnToolbar: [

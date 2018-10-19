@@ -19,12 +19,12 @@ export default {
   name: 'Grades',
   data: () => ({
     chapters: [
-      { id: 1, link: '', image: '/static/doc-images/cards/grades/GradeOne.png' },
-      { id: 2, link: '', image: '/static/doc-images/cards/grades/GradeTwo.png' },
-      { id: 3, link: '', image: '/static/doc-images/cards/grades/GradeThree.png' },
-      { id: 4, link: '', image: '/static/doc-images/cards/grades/GradeFour.png' },
-      { id: 5, link: '', image: '/static/doc-images/cards/grades/GradeFive.png' },
-      { id: 6, link: '', image: '/static/doc-images/cards/grades/GradeSix.png' }
+      { id: 1, link: '', image: 'static/doc-images/cards/grades/GradeOne.png' },
+      { id: 2, link: '', image: 'static/doc-images/cards/grades/GradeTwo.png' },
+      { id: 3, link: '', image: 'static/doc-images/cards/grades/GradeThree.png' },
+      { id: 4, link: '', image: 'static/doc-images/cards/grades/GradeFour.png' },
+      { id: 5, link: '', image: 'static/doc-images/cards/grades/GradeFive.png' },
+      { id: 6, link: '', image: 'static/doc-images/cards/grades/GradeSix.png' }
     ]
   }),
   methods: {
